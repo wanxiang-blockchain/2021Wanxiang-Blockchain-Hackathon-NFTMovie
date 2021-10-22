@@ -1,0 +1,85 @@
+@import "var.scss";
+@import "global.scss";
+
+.content-list {
+  min-height: 500px;
+  padding: 0 20px;
+  .section-content {
+    @include layout(space-around, stretch, row, wrap);
+  }
+}
+
+.content-item {
+  width: 430px;
+  height: 500px;
+  position: relative;
+
+  &:hover .item-img {
+    transform: scale(1.1);
+    width: 430px;
+    border: 12px solid white;
+
+  }
+  .item-name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    margin: 10px 8px;
+    color: white;
+  }
+}
+
+.item-img {
+  transition: all 0.4s ease;
+  height: 225px;
+  width:  400px;
+    object-fit: fill;
+    border: 12px solid white;
+
+}
+.btn{
+  height:60px;
+}
+
+.kuo,
+.mask {
+  width: 100%;
+  overflow: hidden;
+
+}
+
+.caption {
+  position: absolute;
+  width: 40%;
+  height: 50px;
+  top: 10px;
+  left: 10px;
+  color: #ffffff;
+  background: $color-orange;
+  text-align:center;
+  font-weight:bold;
+  opacity:0.7;
+}
+
+.mask {
+  position: absolute;
+  top: 0;
+  background-color: rgba(52, 47, 41, 0.4);
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  @include layout(center);
+  > .icon {
+    position: absolute;
+    top: 40%;
+  }
+  &:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+}
+
+.icon {
+  @include icon(2em, rgba(240, 240, 240, 1));
+}

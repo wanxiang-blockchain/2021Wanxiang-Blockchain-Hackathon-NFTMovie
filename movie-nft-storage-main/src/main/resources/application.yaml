@@ -1,0 +1,18 @@
+
+#Server Configuration
+server:
+  port: 8082
+
+#Log Configuration
+logging:
+  config: classpath:log4j2.yaml
+  level:
+    org.springframework.web: INFO
+    com.pku.ss.movienftserver: INFO
+
+#FileStorage Configuration
+fileStorage:
+  path: /root/home/
+  #path: /Users/zhangyan/
+  #path: D://images/
+

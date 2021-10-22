@@ -1,0 +1,47 @@
+@import "var.scss";
+@import "global.scss";
+
+.signUp {
+  position: relative;
+  top: $header-height + 20px;
+  background-color: #262626 ;
+  border-radius: 20px;
+  width: 400px;
+  height: 1000px;
+  padding: 30px 30px;
+  margin-left: 35%;
+
+  .signUp-head {
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: 600;
+    color: #DD700C;
+  }
+
+  .login-btn {
+    @include layout(space-between);
+    button {
+      display: block;
+      width: 100%;
+      color: white;
+      margin-left: 60px;
+      background-color: #DD700C;
+      border-color: #DD6F0D;
+    }
+  }
+  .input>>>.el-input__inner{
+    margin-top: 2px;
+    background-color: #262626;
+    color: #DD700C;
+    border-color: #DD700C;
+  }
+  .item /deep/ {
+    .el-form-item__label {
+      white-space: pre-wrap;
+      text-align: center;
+      color: white;
+      font-size: 15px;
+    }
+  }
+}

@@ -1,0 +1,81 @@
+@import "var.scss";
+
+.header-search{
+  height:60px;
+}
+
+.song-list-header {
+  width: 100%;
+  text-align: center;
+  margin: 0%;
+  border-bottom: 3px solid $color-orange;
+
+  li {
+    border-radius: 36px 36px 0px 0px;
+    display: inline-block;
+    line-height: 40px;
+    padding: 30px 0;
+    width:314px;
+    font-size: 24px;
+    font-weight: 400;
+    color: $color-white;
+    background-color: #262626;
+    border: 3px solid $color-orange;
+    border-bottom: none;
+
+    //cursor: pointer;
+  }
+  li.active {
+    background-color: $color-orange;
+  }
+}
+
+/*歌单背景*/
+.song-list-album {
+  padding-top: $header-height + 54px;
+  background-color: $theme-background-color;
+
+  /*
+  &::before {
+    //背景
+    content: "";
+    background-color: $theme-color;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: $header-height + 150px;
+  }*/
+}
+
+
+/*歌单左侧*/
+.album-slide {
+  float: right;
+  width: 100%;
+  display: flex;
+
+  /*歌单图像*/
+  .album-img {
+    position: relative;
+    display: inline-block;
+    height: 400px;
+    width: 288px;
+    top: 0px;
+    left: 54px;
+    overflow: hidden;
+    border: 12px solid $color-white;
+    background-color: $color-white;
+    img {
+      width: 100%;
+    }
+  }
+
+  /*歌单信息*/
+  .movie-info {
+    color: $color-white;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0px 0px 0px 80px;
+  }
+}
+

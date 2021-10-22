@@ -1,0 +1,118 @@
+@import "var.scss";
+@import "global.scss";
+
+
+.section-content {
+  @include layout(space-around, stretch, column, wrap);
+  margin: 10px 0px 0px 0px;
+  color: white;
+}
+
+
+/*歌单背景*/
+.song-list-album {
+  padding-top: $header-height + 54px;
+  background-color: $theme-background-color;
+  color: white;
+  @include layout(space-around, stretch, column, wrap);
+  margin-left: 56px;
+  /*
+  &::before {
+    //背景
+    content: "";
+    background-color: $theme-color;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: $header-height + 150px;
+  }*/
+}
+
+.info {
+  margin-left: 56px;
+}
+/*歌单左侧*/
+.album-slide {
+  float: right;
+  width: 100%;
+  display: flex;
+  height: 800px;
+
+  /*歌单图像*/
+  .album-img {
+    position: relative;
+    display: inline-block;
+    height: 746px;
+    width: 90%;
+    top: 0px;
+    left: 54px;
+    overflow: hidden;
+    border: 12px solid $color-white;
+    background-color: $color-white;
+    img {
+      width: 100%;
+    }
+  }
+
+  /*歌单信息*/
+  .movie-info {
+    color: $color-white;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0px 0px 0px 80px;
+  }
+
+
+.buy-btn{
+  height:100px;
+}
+.content-item {
+  width: 286px;
+  height: 600px;
+  position: relative;
+
+  &:hover .item-img {
+    transform: scale(1.1);
+    height: 376px;
+    border: 12px solid white;
+
+  }
+  .item-name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    margin: 10px 8px;
+    color: white;
+  }
+}
+}
+table {
+  font-family: 'Open Sans', sans-serif;
+  width: 750px;
+  border-collapse: collapse;
+  border: 3px solid #44475C;
+  margin: 100px 10px 0 0px;
+}
+
+table th {
+  text-transform: uppercase;
+  text-align: left;
+  background: #44475C;
+  color: #FFF;
+  padding: 8px;
+  min-width: 30px;
+}
+
+table td {
+  text-align: left;
+  padding: 8px;
+  border-right: 2px solid #7D82A8;
+}
+table td:last-child {
+  border-right: none;
+}
+table tbody tr:nth-child(2n) td {
+  background: #D4D8F9;
+}

@@ -1,0 +1,46 @@
+@import "var.scss";
+@import "global.scss";
+
+
+.login {
+  position: absolute;
+  margin-left: 40%;
+  width: 300px;
+  height: 210px;
+  top: $header-height + 60px;
+  padding: 30px 50px;
+  border-radius: 10px;
+  background-color: #262626 ;
+
+  .login-head {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: 600;
+    color: #DD700C;
+  }
+
+  .login-btn {
+    @include layout(space-between);
+    button {
+      display: block;
+      width: 50%;
+      color: white;
+      background-color: #DD700C;
+    }
+  }
+  .input>>>.el-input__inner{
+    margin-top: 2px;
+    background-color: #262626;
+    color: #DD700C;
+    border-color: #DD700C;
+  }
+  .item /deep/ {
+    .el-form-item__label {
+      white-space: pre-wrap;
+      text-align: center;
+      color: white;
+      font-size: 15px;
+    }
+  }
+}

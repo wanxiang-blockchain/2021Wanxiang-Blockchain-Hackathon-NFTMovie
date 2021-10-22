@@ -1,0 +1,39 @@
+@import "var.scss";
+@import "global.scss";
+
+.header-search {
+    @include layout(flex-start, stretch);
+    border-radius: $header-search-radius;
+    overflow: hidden;
+    margin-top: auto;
+
+
+    .button-desc {
+        color: $color-orange;
+        background-color: #262626;
+        height: 30px;
+        width: 70%;
+        border: #dd6f0d solid 5px;
+        font-size: 32px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        &:focus {
+            outline: none;
+        }
+    }
+
+    .search-btn {
+        @include layout(center, center);
+        color: $color-white;
+        background-color: $color-orange;
+        border: #dd6f0d solid 5px;
+        font-size: 25px;
+        width: 30%;
+        height: 30px;
+        cursor: pointer;
+        .icon {
+            @include icon(1.2em, $color-white);
+        }
+    }
+}
