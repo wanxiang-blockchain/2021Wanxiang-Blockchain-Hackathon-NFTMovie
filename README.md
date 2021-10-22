@@ -1,30 +1,17 @@
-# music-client
+# 链影NFT代码
 
-> A Vue.js project
+> contract
 
-## Build Setup
+所用合约
 
-``` bash
-# install dependencies
-npm install
+> front-end
 
-# serve with hot reload at localhost:8080
-npm run dev
+前端代码，基于vue和qtumjs
 
-# build for production with minification
-npm run build
+> movie-nft-storage-main
 
-# build for production and view the bundle analyzer report
-npm run build --report
+NFT后端存储代码
 
-# run unit tests
-npm run unit
+> movie-ntf-backen-main
 
-# run e2e tests
-npm run e2e
-
-# run all tests
-npm test
-```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+NFT后端代码
